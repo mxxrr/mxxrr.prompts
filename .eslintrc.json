@@ -1,0 +1,206 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint",
+    "@nx",
+    "putout",
+    "max-params-no-constructor"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true,
+        "jest": true
+      },
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-var-requires": "off",
+        "@nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nx/typescript"],
+      "rules": {
+        "@nrwl/nx/workspace/space-in-parens": ["error", "never", {
+          "exceptions": ["!"]
+        }],
+        "@typescript-eslint/ban-ts-comment": "warn",
+        "@typescript-eslint/brace-style": ["error", "stroustrup"],
+        "@typescript-eslint/comma-dangle": ["error", {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "ignore",
+          "enums": "always-multiline"
+        }],
+        "@typescript-eslint/func-call-spacing": "error",
+        "@typescript-eslint/global-strict": "off",
+        "@typescript-eslint/indent": ["error", 2, {
+          "ArrayExpression": 1,
+          "CallExpression": { "arguments": 1 },
+          "FunctionDeclaration": { "body": 1, "parameters": 1 },
+          "FunctionExpression": { "body": 1, "parameters": 1 },
+          "MemberExpression": 1,
+          "ObjectExpression": 1,
+          "SwitchCase": 1,
+          "offsetTernaryExpressions": true
+        }],
+        "@typescript-eslint/keyword-spacing": "error",
+        "@typescript-eslint/lines-between-class-members": "error",
+        "@typescript-eslint/new-cap": ["off"],
+        "@typescript-eslint/newline-after-var": "off",
+        "@typescript-eslint/no-array-constructor": "error",
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-loop-func": "error",
+        "@typescript-eslint/no-redeclare": "error",
+        "@typescript-eslint/no-shadow": "error",
+        "@typescript-eslint/no-unused-expressions": "error",
+        "@typescript-eslint/no-unused-vars": ["error", {
+          "argsIgnorePattern": "^_"
+        }],
+        "@typescript-eslint/no-use-before-define": ["off"],
+        "@typescript-eslint/no-useless-rename": "off",
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/object-curly-spacing": ["error", "always"],
+        "@typescript-eslint/padding-line-between-statements": ["error", {
+          "blankLine": "always", "prev": "*", "next": "if" // pad line above if statement
+        }, {
+          "blankLine": "always", "prev": "if", "next": "*" // pad line beneath if statement
+        }],
+        "@typescript-eslint/quotes": ["error", "single", { "allowTemplateLiterals": true }],
+        "@typescript-eslint/semi": ["warn", "never"],
+        "@typescript-eslint/sort-vars": "off",
+        "@typescript-eslint/space-before-blocks": ["error", "always"],
+        "@typescript-eslint/space-before-function-paren": ["error", "always"],
+        "@typescript-eslint/space-infix-ops": "error",
+        "@typescript-eslint/vars-on-top": "off",
+        "callback-return": ["error", ["callback", "next"]],
+        "camelcase": "error",
+        "computed-property-spacing": ["error", "never"],
+        "consistent-return": ["warn", { "treatUndefinedAsUnspecified": true }],
+        "consistent-this": ["error", "self"],
+        "constructor-super": "error",
+        "curly": ["error", "all"],
+        "eol-last": "warn",
+        "eqeqeq": "error",
+        "generator-star-spacing": ["error", {"before": true, "after": false}],
+        "handle-callback-err": ["error", "err"],
+        "import/first": "error",
+        "import/namespace": "error",
+        "import/newline-after-import": ["error", { "count": 2 }],
+        "import/no-mutable-exports": "error",
+        "import/order": "error",
+        "max-depth": ["error", 5],
+        "max-len": ["error", 255, {
+          "ignoreRegExpLiterals": true,
+          "ignoreStrings": true,
+          "ignoreUrls": true
+        }],
+        "max-nested-callbacks": ["error", 3],
+        "max-params-no-constructor/max-params-no-constructor": ["error", 6],
+        "max-statements-per-line": ["error", { "max": 1 }],
+        "new-parens": "error",
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+        "no-class-assign": "error",
+        "no-console": "warn",
+        "no-constant-condition": "error",
+        "no-else-return": "error",
+        "no-empty": "error",
+        "no-eq-null": "error",
+        "no-eval": "error",
+        "no-ex-assign": "error",
+        "no-extend-native": ["error", {"exceptions": ["Object"]}],
+        "no-func-assign": "error",
+        "no-lonely-if": "error",
+        "no-mixed-requires": "error",
+        "no-mixed-spaces-and-tabs": "error",
+        "no-multi-spaces": "error",
+        "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 1 }],
+        "no-native-reassign": "error",
+        "no-new-object": "error",
+        "no-new-require": "error",
+        "no-new-wrappers": "error",
+        "no-path-concat": "error",
+        "no-process-exit": "error",
+        "no-regex-spaces": "error",
+        "no-return-assign": "error",
+        "no-restricted-syntax": ["warn", {
+          "selector": "LabeledStatement",
+          "message": "Labels are a form of GOTO; using them makes code confusing and hard to maintain and understand."
+        }, {
+          "selector": "WithStatement",
+          "message": "`with` is disallowed in strict mode because it makes code impossible to predict and optimize."
+        }],
+        "no-sparse-arrays": "error",
+        "no-this-before-super": "error",
+        "no-trailing-spaces": "error",
+        "no-undef": "warn",
+        "no-unreachable": "error",
+        "no-useless-call": "warn",
+        "no-with": "error",
+        "no-var": "error",
+        "object-curly-newline": ["error", {
+          "ObjectExpression": {
+            "minProperties": 3,
+            "multiline": true,
+            "consistent": true
+          },
+          "ObjectPattern": {
+            "minProperties": 3,
+            "multiline": true,
+            "consistent": true
+          },
+          "ImportDeclaration": {
+            "minProperties": 5,
+            "multiline": true,
+            "consistent": true
+          },
+          "ExportDeclaration": {
+            "minProperties": 2,
+            "multiline": true,
+            "consistent": true
+          }
+        }],
+        "object-property-newline": ["error", {
+          "allowAllPropertiesOnSameLine": true
+        }],
+        "object-shorthand": "warn",
+        "one-var": ["error", "never"],
+        "one-var-declaration-per-line": ["error", "always"],
+        "operator-linebreak": ["error", "before"],
+        "padded-blocks": ["error", {
+          "classes": "always",
+          "switches": "never"
+        }],
+        "putout/multiple-properties-destructuring": ["error", { "minProperties": 5 }],
+        "radix": "error",
+        "space-unary-ops": ["error", { "words": true, "nonwords": true }],
+        "wrap-iife": ["error", "inside"],
+        "yoda": ["warn", "never"]
+      }
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nx/javascript"],
+      "rules": {}
+    }
+  ]
+}

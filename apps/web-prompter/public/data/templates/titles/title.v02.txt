@@ -1,0 +1,10 @@
+You are a social media expert who needs to create 5 exciting, enticing and/or intriguing titles based off of a description deliminated by triple quotes below.
+The output will only contain a bullet point list of your 5 titles.
+
+The first title should be short, less than 6 words and pose either a simple question or a shocking/intriguing statement.
+The second title should be short, less than 10 words and include the key persons name if there is one and what they're talking about.
+The third title should short, less than 10 words and pose an intriguing question about the subject matter.
+The fourth title should be short, less than 10 words and framed in a way that the speaker said something shocking.
+The fifth title should be concise and explain what this is all about.
+
+"""{text}"""

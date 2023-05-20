@@ -1,0 +1,5 @@
+Write a summary of the following text delimited by the tripe quotes.
+Make sure your summary includes key information, people's names, important quotes, the overall sentiment and is in an order similar to that of the text.
+The output summary should be between 400 - 1000 words in length with a longer and more detailed summary being preferred.
+"""{text}"""
+SUMMARY:

@@ -1,0 +1,67 @@
+[start:0.009][speakers:speaker_0]
+Wow.
+[end:0.699]
+
+[start:0.709][speakers:speaker_0]
+Wow.
+[end:1.259]
+
+[start:1.269][speakers:speaker_0]
+Wow, my goodness.
+[end:4.679]
+
+[start:6.309][speakers:speaker_0]
+There&quot;s so many of you.
+[end:7.76]
+
+[start:9.189][speakers:speaker_0]
+There&quot;s so, thank you. Thank you for coming.
+[end:10.449]
+
+[start:2192.83][speakers:speaker_0]
+Welcome to Socrates In the City, I'm Eric Metaxis your host. Now let me introduce you to Dr James Tour.
+[end:2302.669]
+
+[start:2492.83][speakers:speaker_1]
+Thank you, it's a pleasure to be here.
+[end:2502.669]
+
+[start:2492.83][speakers:speaker_1]
+And, and uh it&quot;s bothering the community and uh uh what, what community, what community, the origin of life, community, the research community.
+[end:2502.669]
+
+[start:2502.679][speakers:speaker_1]
+Yes, there&quot;s researchers that work in this area of origin of life and they have meetings together and they discuss the progress and uh it doesn&quot;t go anywhere.
+[end:2510.719]
+
+[start:2510.899][speakers:speaker_1]
+Can you imagine doing that for 40 year career ? And, and you&quot;re further away from the goal than when you started 40 years ago.
+[end:2518.27]
+
+[start:2518.879][speakers:speaker_1]
+And so they keep saying that we&quot;re gonna have life in, uh Lee Cronin said it in 2011 that he&quot;ll, he&quot;ll, he&quot;ll hopefully make life in his lab within two years.
+[end:2528.31]
+
+[start:2528.86][speakers:speaker_0,speaker_1]
+He said this in 20 11 2011, he didn&quot;t, he was not successful just doing the math.
+[end:2533.889]
+
+[start:2533.899][speakers:speaker_0]
+I&quot;m thinking maybe that didn&quot;t, maybe that didn&quot;t happen.
+[end:2537.129]
+
+[start:2537.139][speakers:speaker_0,speaker_1]
+Jack at Harvard, a Nobel Prize winner said in 2014, he&quot;d have life in his lab made within 3 to 5 years.
+[end:2545.409]
+
+[start:2545.669][speakers:speaker_1]
+He missed that date.
+[end:2546.899]
+
+[start:2547.389][speakers:speaker_1,speaker_0]
+Uh, but, but you see, but again, you&quot;re so understated.
+[end:2550.479]
+
+[start:2550.78][speakers:speaker_0]
+I know from what little I have watched of your videos at D R James Tour on youtube that it, it would be like saying, I&quot;m gonna have a car, uh, in two years.
+[end:2566.56]

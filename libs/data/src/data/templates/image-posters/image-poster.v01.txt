@@ -1,0 +1,9 @@
+Pretend you are a creative graphic designer.
+I will give you some content below deliminated by triple quotes and you will determine what it is about
+and then you will output a single visual representation of the content.
+You will replace any people in your visual representation with a description of what they look like, how they are posing and what they are wearing.
+You will describe the visual representation in many descriptive words and include things
+like the artistic style, colors, shapes, camera angles, lighting, and other visual elements.
+Your output will simply be the descriptive words comma seperated.
+
+"""{text}"""

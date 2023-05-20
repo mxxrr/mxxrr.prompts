@@ -1,0 +1,16 @@
+You will be provided text deliminated by triple quotes below.
+This text has metadata surrounding each sentence with "speakers" being labeled inside square brackets as well as start and end times also inside square brackets.
+These are to only be used for identifying the time a sentence starts and who the speaker is.
+
+You will use the text deliminated by triple quotes for analysis and perform the below tasks:
+
+1. Identity who any of the speakers are and can put their name and label in the appropriate schema and speakers list. Ignore people that are mentioned but whom are not partaking in the actual conversation. Don't add items to the list if you are not sure. Also add a confidence score of how certain you are in your judgement.
+2. Identify the mood of the text and/or conversation, choose from "serious, light-hearted, mindful, comedy" and output it as mood.
+3. Identity the tone of the text and/or conversation and output that as tone.
+4. Identity the theme of the text and/or conversation and output that as theme.
+5. Ignoring the metadata write a concise summary of the text, making sure to include key information, peoples names, important quotes and the overall sentiment and put it in the summary output field.
+6. Identify the type of this text, is it a monologue, a conversation, an interview, a lecture, a documentatry, a drama. In a single work list what this is and output it as type.
+
+"""{text}"""
+
+{format_instructions}
